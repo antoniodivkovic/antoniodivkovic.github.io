@@ -1,0 +1,69 @@
+@font-face {
+	font-family: NeueHaas;
+	src: url(../fonts/NHaasGroteskTXPro-55Rg.ttf);
+}
+@font-face {
+	font-family: NeueHaasMedium;
+	src: url(../fonts/NHaasGroteskTXPro-65Md.ttf);
+}
+
+body {
+	font-family: NeueHaas;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	text-align: center;
+}
+#img__pfp {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+p {
+	font-size:17px;
+	color: #403E43;
+}
+
+span {
+	font-family: NeueHaasMedium;
+}
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	cursor:pointer;
+}
+.hover-underline-animation::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	transform-origin: bottom left;
+	transition: transform 0.35s ease-out;
+}
+.hover-underline-animation:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+#img__email {
+	width: 28px;
+	height: 28px;
+	margin-top:5px;
+}
+
+a {
+	color:#403E43;
+	text-decoration: none;
+}
